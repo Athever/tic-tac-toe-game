@@ -145,7 +145,7 @@ document.getElementById('start').addEventListener('click',() => {
         }
       }
       document.getElementById('again').addEventListener('click',() => {
-        location.reload();
+		 setTimeout(function() {location.reload()},500);
       })
     });
   });

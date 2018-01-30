@@ -45,6 +45,7 @@ button {
   border: 3px solid #003002;
   color: #fff;
   transition: all .3s ease-in-out;
+  outline: none;
 }
 button:hover {
   background: #436436;
