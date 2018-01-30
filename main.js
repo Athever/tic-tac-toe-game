@@ -143,9 +143,14 @@ document.getElementById('start').addEventListener('click',() => {
           ec.innerHTML = `<h3>Draw.</h3>`
           ec.innerHTML += `<button id="again">Play again</button>`
         }
+		if (board[1] === "o" && board[2] === "x" && board[3] === "x" && board[4] === "x" && board[5] === "o" && board[6] === "o" && board[7] === "x" && board[8] === "o" && board[9] === "x") {
+          e.style.display = "block";
+          ec.innerHTML = `<h3>Draw.</h3>`
+          ec.innerHTML += `<button id="again">Play again</button>`
+        }
       }
       document.getElementById('again').addEventListener('click',() => {
-		 setTimeout(function() {location.reload()},500);
+		 setTimeout(function() {location.reload()},300);
       })
     });
   });
