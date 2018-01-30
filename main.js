@@ -138,6 +138,11 @@ document.getElementById('start').addEventListener('click',() => {
           ec.innerHTML = `<h3>Draw.</h3>`
           ec.innerHTML += `<button id="again">Play again</button>`
         }
+		if (board[1] === "x" && board[2] === "o" && board[3] === "x" && board[4] === "x" && board[5] === "x" && board[6] === "o" && board[7] === "o" && board[8] === "x" && board[9] === "o") {
+          e.style.display = "block";
+          ec.innerHTML = `<h3>Draw.</h3>`
+          ec.innerHTML += `<button id="again">Play again</button>`
+        }
       }
       document.getElementById('again').addEventListener('click',() => {
         location.reload();
